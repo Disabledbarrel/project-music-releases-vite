@@ -1,0 +1,16 @@
+.albumContainer {
+	padding: 10px;
+}
+.albumImage {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+h2 {
+	margin: 0;
+}
+a {
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration: none;
+}
