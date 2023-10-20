@@ -7,10 +7,49 @@
 	object-fit: contain;
 }
 h2 {
-	margin: 0;
+	margin: 12px 0 0 0;
 }
 a {
 	font-size: 14px;
-	color: #ffffff;
+	color: var(--text-color);
 	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.imageContainer {
+	position: relative;
+	width: inherit;
+	height: inherit;
+}
+.hoverContainer {
+	& svg {
+		color: var(--text-color);
+		opacity: 0.5;
+		width: 28px;
+		height: 28px;
+		&:hover {
+			transform: scale(1.3);
+			opacity: 1;
+		}
+	}
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+.visible {
+	opacity: 1;
+}
+.btn {
+	background: transparent;
+	border: none;
+	cursor: pointer;
 }

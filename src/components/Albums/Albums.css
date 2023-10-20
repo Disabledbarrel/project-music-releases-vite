@@ -1,12 +1,8 @@
-.main {
-	font-family: Helvetica, sans-serif;
-}
-
 h1 {
 	margin: 0;
 	font-size: 20px;
 	text-align: center;
-	color: #ffffff;
+	color: var(--text-color);
 	margin-bottom: 2em;
 }
 .albumsContainer {
